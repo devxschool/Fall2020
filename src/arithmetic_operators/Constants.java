@@ -8,12 +8,11 @@ public class Constants {
 
     //constant(final) variable must be named with all capital letters separated by _ in case of more than one words
     //it's a naming convention.
-    //purpose is to visually see that the variable is constant
+    //purpose is to visdsually see that the variable is constant
     static final char GENDER = 'F';
     static int population = 10000;
 
     public static void main(String[] args) {
-
 
         System.out.println(GENDER);
         population = 1000;

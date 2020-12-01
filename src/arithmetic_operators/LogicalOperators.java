@@ -12,7 +12,7 @@ public class LogicalOperators {
         String weekend1 = "Saturday";
         String weekend2  = "Sunday";
 
-        boolean canSleep = today == weekend1 || today == weekend2;
+        boolean canSleep = today == weekend1 | today == weekend2; //|
         System.out.println("Can I sleep? " + canSleep);
 
 
@@ -24,19 +24,6 @@ public class LogicalOperators {
         boolean discount = age >= 60 || spending >= 100;
 
         System.out.println("Should we give discount? " + discount);
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         //let insurance company
         //you want to provide insurance to people who are older than 18 and not older than 70

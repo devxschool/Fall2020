@@ -1,0 +1,12 @@
+Runtime errors ->
+are errors that are caused by user input.  We find it out only when the program starts running.
+They cause the program to crash.
+
+Compile time errors ->
+Errors that do not let the program to run. A.k.a Java syntax and rules issues.
+{ ;
+
+
+Errors on console are runtime errors.
+
+Errors in the code are compile time errors.
