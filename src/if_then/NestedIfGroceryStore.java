@@ -1,5 +1,7 @@
 package if_then;
 
+import java.util.Scanner;
+
 public class NestedIfGroceryStore {
 
     public static void main(String[] args) {
@@ -36,10 +38,12 @@ public class NestedIfGroceryStore {
 //        Pumpkin in 60 days
 
 //
+        Scanner scanner = new Scanner(System.in);
 
-
-        String productType = "";
-        String productName = "";
+        System.out.println("What is the product type?");
+        String productType = scanner.nextLine();
+        System.out.println("What is the product name?");
+        String productName = scanner.nextLine();
         int daysToExpire = 0;
 
         if (productType.equals("Greens")) {//outer if statement open
@@ -56,14 +60,24 @@ public class NestedIfGroceryStore {
 
         } //outter close 159
 
-        else if (productType.equals("Fruits")) {//outer
+        else if (productType.equals("Fruits")) {//outer - used in the context of a broader condition.
 
             if (productName.equals("Banana")) {
                 //question
+                System.out.println("Where are the bananas impored from?");
                 //input
-                String import
-                daysToExpire = 15;
-            } else if (productName.equals("Rasberries") {
+                String importedFrom = scanner.nextLine();
+                if(importedFrom.equals("Peru")) {
+                    daysToExpire = 11;
+                }
+                else if(importedFrom.equals("Brazil")) {
+                    daysToExpire = 14;
+                }
+                else {
+                    daysToExpire = 15;
+                }
+
+            } else if (productName.equals("Rasberries")) {
                 daysToExpire = 7;
             }
             else{
