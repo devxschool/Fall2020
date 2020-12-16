@@ -1,0 +1,148 @@
+Methods:
+What are methods in programming?
+
+Every single programming language has methods. in some languages like
+python, JS they known as functions.
+
+Methods are one coding logic that can solve a problem and return solution.
+Methods are a big part of OOP.
+
+History:
+Before OOP was development all coding was done in top to bottom manner. If I had to
+design a program which turns on/off a lamp. everytime Program needed to turn on/off
+the lamp programmers had to repeatedly write the same actions. So there was no way
+to reuse the same logic(action) in different scenarios.
+
+//if(person.moving()){
+    //prepare for turning on the light
+    //turn on the light
+    //prepare for turning on the light
+    //turn on the light
+    //prepare for turning on the light
+    //turn on the light
+}
+  if(time==6:00pm) {
+     //prepare for turning on the light
+     //turn on the light
+     //prepare for turning on the light
+     //turn on the light
+     //prepare for turning on the light
+     //turn on the light
+  }
+
+  if(switch.on()){
+     //prepare for turning on the light
+     //turn on the light
+     //prepare for turning on the light
+     //turn on the light
+     //prepare for turning on the light
+     //turn on the light
+  }
+
+  --> The above solution works just fine for the end user. However it's extremely
+  difficult to maintain such programs bc if there was a step changed for turning the \
+  light devs would have to go to many places to apply the changes to whole code.
+  Repetitive code(logic) is an extremely bad coding practice.
+
+  Methods became a solution for this problem.
+
+  turnOnTheLight()
+  {
+         //prepare for turning on the light
+         //turn on the light
+         //prepare for turning on the light
+         //turn on the light
+         //prepare for turning on the light
+         //turn on the light
+  }
+
+
+ if(person.moving()){
+     turnOnTheLight();
+  }
+
+  if(time==6:00pm) {
+      turnOnTheLight();
+  }
+
+  if(switch.on()){
+      turnOnTheLight();
+  }
+
+
+
+Access Modifiers:
+public  --> this method can be used inside any other class
+protected --> this method can be used inside another class which is in same package.
+default(empty) -->
+private
+
+
+Return type can be any data type both primitive and non primitive.
+(int, short, float, char, String). -> means method will return the specified data
+
+void -> which means method doesnt return any data.
+
+
+
+Method names:
+camelCase -> start with lower case. use verbs.
+BC methods in general represent actions.
+
+Required Parantesis:
+parantesis can either be empty which stands for no parameters.
+public void sayHi() {
+
+}
+
+
+or they can be populated with parameters. Parameters(params) are variables inside parentesis
+separated by comma(,). you dont initialize the params.
+
+what are params?
+imagine you have built a car with all engine and everything else in place already.
+but the car will not even start and move unless you put gas into it.
+
+your parameterized method's gas is info that it expects(that's essential for it) to
+run.
+
+public int sum(int num1, int num2) {
+    //body
+}
+
+
+return statement:
+if a method has a return type other than void return statement
+is required for the method
+
+public int sum(int num1, int num2){
+    return 1;                     => return statement.
+}
+return statement can be followed by literals, and variables.
+
+
+public int sum(int num1, int num2){
+    int result = num1 + num2;
+    return result;                     => return statement.
+}
+
+
+optional specifiers.
+after access modifier we can put optional specifiers.
+there are two of them:
+1. static
+2. final
+
+ex: public static char getGrade(int exam1, int exam2){
+
+}
+
+if you make your method static you can call this method inside
+another static method directly just by method name.
+
+
+Scanner -> input from the user from console to our program.
+
+params -> input to the method.
+
+params aka arguments, args;
