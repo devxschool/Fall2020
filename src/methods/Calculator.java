@@ -3,7 +3,10 @@ package methods;
 public class Calculator {
 
     public static void main(String[] args) {
-        System.out.println(calculateTax(true, 10000000));
+//        System.out.println(Calculator.calculateTax(true, 10000000));
+        Calculator c = new Calculator();
+        double d = c.calculateTax(true, 100000);
+        System.out.println(d);
     }
 
     //when do you print inside vs return.
@@ -21,7 +24,9 @@ public class Calculator {
     //what should be the return type -> should I just printout or return? return tax.
     //is salary int or double? double
     //what us return type?
-    public static double calculateTax(boolean isMarried, double salary) {
+
+
+    public double calculateTax(boolean isMarried, double salary) {
         double tax = 0;
 
         if (isMarried) {
@@ -34,6 +39,14 @@ public class Calculator {
         return tax;
     }
 
+    /**
+     * instance methods can be called inside instance methods "within the same class" without creating an object.
+     * @param isMarried
+     * @param salary
+     */
+    public void printTax(boolean isMarried, double salary) {
+        System.out.println(calculateTax(isMarried, salary));
+    }
 
     //understand what is return type?
     //memorize method definition syntax.
