@@ -146,3 +146,21 @@ Scanner -> input from the user from console to our program.
 params -> input to the method.
 
 params aka arguments, args;
+
+
+
+###Method overloading.
+Method overloading is when you create two method with same name
+but different parameters.
+
+method overloading allows us to use same method
+name for multiple methods with different params.
+
+if the two methods have same names and same params then
+java is going to give a compilation error.
+
+ex: int sum(int num1, int num2);
+ex: double sum(double num1, double num2);
+
+hardest thing for devs is to come up with names.
+the problem method overloading solves is

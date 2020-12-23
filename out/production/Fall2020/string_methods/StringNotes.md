@@ -61,6 +61,85 @@ boolean result = str.isEmpty();//true
 String str = "Hello";
 str.isEmpty(); //false
 
+###public String substring(int i)
+access modifier - protected, private, default.
+public we can use in any class
+
+return type -> String. Result of the method.
+
+name of the method is substring. 
+param -> information which we have to provide(give) to the method.
+
+This method is public method that takes an int does something with that int and returns a new String.
+
+it return a substring starting from the given index(i). 
+ex: String str = "Hello";
+    str.substring(2); => llo;
+    
+   takes the starting and goes till the end of the String.
+   
+
+###public String substring(int i, int j);
+it takes two integers uses them return a String.
+
+i -> starting point inclusive. 
+j -> ending point, exclusive.
+
+String str = "DevX School";
+
+str.substring(0,4) => DevX;
+str.substring(5) => School;
+
+###public int indexOf(String s)
+takes a string and return an int.
+
+s -> represents a substring of which you want to find the index of. it could also be 
+just one character. 
+
+indexOf return the index of a first occurrence of the given substring.
+if the substring doesnt exist in this String then return -1;
+
+ex: "DevXSchool".indexOf("S") => 4;
+
+ex: "Hello World".indexOf("or");
+
+ex: "Java SDET".indexOf("ava"); => 1
+
+ex: "Senior SDET".indexOf("Seniorita"); => -1;
+
+ex: "Brooklyn".indexOf("o"); => 2;
+
+
+###public int indexOf(String s, int i)
+
+s -> substring
+i -> index
+
+return the index of a first occurrence of a substring(s), however start looking for substring
+from a given index(i). 
+
+i -> specifies what needs to be skipped. Skip everything until then index, and compare from there
+
+
+ex: String str = "Mega Mega Megafon";
+str.indexOf("e", 3); => 6;
+
+str.indexOf("ga", 4); => 7;
+
+
+
+
+
+
+
+
+   
+    
+
+
+
+
+
 
 
 
