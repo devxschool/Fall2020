@@ -128,20 +128,135 @@ str.indexOf("ga", 4); => 7;
 
 
 
+###public int lastIndexOf(String str)
+so it will return the index of last str occurrence. 
+
+ex: String str = "Hello";
+    str.indexOf("l"); ==> 2
+    str.lastIndexOf("l"); ==> 3
+    
+     
+ex: String str1 = "DevXSchool is cool";
+    str1.indexOf("ool"); => 7
+    str1.indexOf("o",8); => 8
+    
+    str1.lastIndexOf("ool") => 15
+    str1.lastIndexOf("o") => 16;
+    
+ 
+public boolean equals(String str);
+it returns true if the values of each String are equal. Regardless
+how each Strings have been initialized. 
+
+String str = "Hello";
+String str1 = new String("Hello");
+str.equals(str1); => true;
+
+String str = "hello";
+String str1 = "Hello";
+str.equals(str1); => false. bc it's case sensitive.
+
+String str = "hello";
+str.equals("Hello"); //false;
 
 
+###public boolean equalsIgnoreCase(String str)
+compares the values of two strings with cases ignored
 
+ex: String str = "DevXSchool"
+   str.equalsIgnoreCase("devxschool")// return true, bc letters match 
+   //cases ignored.
 
-
+   //userNames are usually case insensitive
    
+   
+###public String toLowerCase()
+transfers all String characters to lowercase. if the characters 
+are special character noting happens to them.
+@$%^&*()+_
+
+ex: String str = "HeLLO";
+String str1 = str.toLowerCase() -> return a new String "hello";
+//doesnt change the original String.
+//so str is still "HeLLO";
+
+
+###public String toUpperCase()
+transfers all String characters to upper case. if the characters 
+are special character noting happens to them.
+@$%^&*()+_
+
+String str1 = str.toUpperCase() -> return a new String "HELLO";
+//doesnt change the original String.
+//so str is still "HELLO";
+
+###public String trim()
+removes the white spaces before and after the String. does not remove the whitespaces
+in between.
+
+    String str = " Hello";
+    str.trim() => return "Hello"
     
+    String str = " Hello ";
+    str.trim() => return "Hello"
+    
+    String str = "Hello ";
+        str.trim() => return "Hello"
+        
+    String str = " Hello World";
+        str.trim() => return "Hello World";
+        
+        
+###public String replace(char oldChar, char newChar) 
+change all occurrences of oldChar to newChar and return a new String.
+if there no oldChar occurrences then return the original String.
 
+       String str = "DevX School"
+       str.replace('c','s') => "DevX Sshool"
+       
+       String str = "United States Of America"
+       str.replace('e','i') => Unitid Statis Of Amirica
+              
+       
+###public String replace(String oldSubString, String newSubString)
+change the whole subtring to a new substring within the original String and 
+return the resulting String.
 
+      String str = "Hello world"
+      str.replace("world", "World") => Hello World
+      
+      String str = "Hello world";
+      str.replace("world", "my beautiful World") => Hello my beautiful World
+      
+      
+###public String replaceFirst(String oldSubString, String new SubString)
+replaces only the first occurence of the oldSubString to new SubString.
 
-
-
-
-
-
+    String str = "Hello Hell of a 2021 World"
+    str.replace("ell","") => Ho Hell of a 2021 World  
     
     
+###public boolean contains(String subString)
+checks if the String contains the given subString. if yes then return true
+otherwise return false.
+
+it doesnt have to be a separate word. it can be a part of one word as well. Or 
+it can even be multiple words.
+
+    String str = "MacBook Pro"
+    str.contains("Book") -> true.
+    
+    str.contains("ok Pro"); -> true
+    
+    str.contains("acb"); -> false; case sensitive
+
+###public boolean startsWith(String str)
+
+return true if the string starts with the given String(str).
+
+    String str = "hello World";
+    str.startsWith("h") // return true
+    str.startsWith("he") // return true
+    str.startsWith("hello") // return true
+
+we can use this for sorting.
