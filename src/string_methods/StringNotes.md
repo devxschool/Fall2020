@@ -260,3 +260,32 @@ return true if the string starts with the given String(str).
     str.startsWith("hello") // return true
 
 we can use this for sorting.
+
+
+###Pool vs Heap
+
+Any method that returns a String internally creates a new String in the heap.
+
+ex: 
+    
+    String str = "hello";
+    String str1 = " hello".trim();
+    str==str1// false; 
+    str.equals(str1);//true
+
+
+###Immutability
+
+String values will only change if you actually reassign the value of a String.
+
+    String str = "Hello";
+    String str2 = str.concat(" World);
+    
+    System.out.println(str)//Hello
+    System.out.println(str2)//Hello Word
+    
+    
+the only way we can make  the following statement printout something else is by reassigning.
+     
+     str = "Mars";
+     System.out.println(str) -> Mars
