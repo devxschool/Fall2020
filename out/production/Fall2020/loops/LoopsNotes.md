@@ -4,6 +4,8 @@ Loops are a process in java that helps us solve
 repeated actions in an elegant way. Loops
 help us avoid repeated codes. 
 
+Loops help us execute one set of statements multiple times.
+
 
 ####Problem
 Imagine a scenario where you need to get 
@@ -47,3 +49,13 @@ for sure.
 
 
 Only difference between While and Do While is that Do While is guaranteed to run at least once
+
+
+
+###For Loop
+If the number of iteration is fixed, you can use for loop. 
+ex: You need to loop though a String. Since String has a set amount of characters you should 
+use for loop.
+
+ex: Do something for 10 times. use for loop again bc, the amount of iteration you need to 
+perform is pre set.
