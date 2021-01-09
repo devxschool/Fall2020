@@ -100,7 +100,35 @@ from big companies like Google, Apple so you can trust them.
 
 AfterClass will also run only once after all tests. 
 
+###Assert
+Assertions are the validating part of a test. 
+
+In Junit there are multiple assertion options and every single assertion has a parameter that takes a custom error message
+
+Testing good practices:
+1. In my framework I always put custom error messages on my assertions in order to be able identify the point 
+of failure from the first glance, which helps me find the root cause of a test failure quicker.
+
+2. Every test case must be independent of each other -  if an SDET or QA or Dev designs a test which depends on the 
+result of a previous test, it will cause the new test to fail just because the first test failed. In such scenarios
+which are extremely common, our framework will be producing false reports about tests.
+
+3. 
 
 
 
+1. Assert.fail() -> when this method is called test will fail
+with AssertionException.
+   Assert.fail(String msg) -> we can pass a custom message
+
+2.
+  a. int,short,byte,long - Assert.assertEquals(String msg, int expectedResult, int actualResult);
+  b. double, float - Assert.assertEquals(String msg, double expectedResult, double actualResult, double delta);
+     delta is decimal difference between expected and actual results you want to allow for your test.
+
+  c. String -> Assert.assertEquals(String msg, String expected, String actual);
+  
+  d. assertNull -> you pass an object(non-primitive) to assertNull(Strin msg, Object obj);
+  e. assertNotNull -> you pass an object(non-primitive) to assertNotNull(Strin msg, Object obj); and it will return
+  true if the object is not null.
 
