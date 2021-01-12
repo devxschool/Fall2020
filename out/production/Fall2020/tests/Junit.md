@@ -131,4 +131,9 @@ with AssertionException.
   d. assertNull -> you pass an object(non-primitive) to assertNull(Strin msg, Object obj);
   e. assertNotNull -> you pass an object(non-primitive) to assertNotNull(Strin msg, Object obj); and it will return
   true if the object is not null.
+  f. assertTrue -> assertTrue(String msg, boolean actual) -> if actual result is true then test passes
+  g. assertFalse -> assertFalse(String msg, boolean actual) -> if actual result is false then test passes
+
+
+
 

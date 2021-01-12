@@ -11,7 +11,7 @@ public class AssertDemo2 {
     @Test
     public void test1() {
         //fail
-        System.out.println("HEllo World");
+        System.out.println("Hello World");
         if (false) {
             Assert.fail("User login unsuccessful");
         } else {
@@ -19,8 +19,6 @@ public class AssertDemo2 {
         }
         //in setup part of the test.
         System.out.println("After Fail");
-
-
     }
 
 
@@ -35,7 +33,6 @@ public class AssertDemo2 {
     public void assertEqualsWithDouble() {
         //As a Weather company we would like to provide our customer weathers in both F and C.
         //C should be rounded to 2 decimal points.
-        //
 
         double actualC = ClassesToTest.convertFtoC(80.0);
 
