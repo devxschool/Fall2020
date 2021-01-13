@@ -16,7 +16,7 @@ public class MultiDimensionalArrays {
         //size of the inner arrays are not required.
         //they can be of different sizes
         //declaring inner array size doenst define a min or max values you can store.
-        double[][] weeklySales = new double[7][];
+        double[][] weeklySales = new double[7][2];
         weeklySales[0] = mondaySales;
         weeklySales[1] = tuesdaySales;
         weeklySales[2] = wednesdaySales;
@@ -28,11 +28,16 @@ public class MultiDimensionalArrays {
         System.out.println(Arrays.deepToString(weeklySales));
         System.out.println(weeklySales[1][2]);
 
-
         //calculate total amount of sales of the week.
         for (int i = 0; i < weeklySales.length; i++) {
             for (int y =0; y <weeklySales[i].length; y++) {
                 System.out.println(weeklySales[i][y]);
+            }
+        }
+
+        for (double[] arr : weeklySales) {
+            for (double l : arr) {
+
             }
         }
     }
