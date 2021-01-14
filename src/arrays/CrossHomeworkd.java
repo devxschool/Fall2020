@@ -7,8 +7,6 @@ public class CrossHomeworkd {
 
         //create an array.
         char[][] ticktacktoeArr = new char[3][3];
-
-
         //first user is going to play X.
         //second user is going to play O
         //you are going to ask a user X or O to enter cell number(coloumn, row)
@@ -21,7 +19,6 @@ public class CrossHomeworkd {
         //   Enter O -> 2,1
         //   Enter X -> 1,2
 
-        //
         //you write a logic which will say X or O won.
         //if no one won draw.
 
