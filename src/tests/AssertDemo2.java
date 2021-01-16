@@ -7,7 +7,6 @@ import org.junit.Test;
 
 public class AssertDemo2 {
 
-
     @Test
     public void test1() {
         //fail

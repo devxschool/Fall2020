@@ -136,4 +136,21 @@ with AssertionException.
 
 
 
+##Runner classes
+In order to run multiple Test Classes together we need to implement Junit 
+Test Runner class.
+
+Runner class can be configured with the help of some Junit annotations
+
+1. @RunWith(Suite.class) -> RunWith annotation takes different params and we
+need to pass Suite.class.
+
+2. @Suite.SuiteClasses({list all test classes you want to include separated by a comma})
+ex: 
+
+       @RunWith(Suite.class)
+       @Suite.SuiteClasses({FirstTest.class, AssertDemo2.class})
+       public class SmokeTestRunner{}
+
+
 

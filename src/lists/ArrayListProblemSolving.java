@@ -51,6 +51,4 @@ public class ArrayListProblemSolving {
     //50+44 = 94;
 
     //public int doSomething(List<String> arr);
-
-
 }
