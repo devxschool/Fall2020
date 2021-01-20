@@ -1,0 +1,1077 @@
+Fall2020
+
+1. Akmaral ->
+	What is front end of an application?
+	Front end is coding.
+	Front end is what we see on the application
+	Pictures, audio player, buttons.
+
+	What is the backedn of an application?
+	Code. Logic. Algorithms.
+
+
+	What is the syntax for main method?
+	public static void main(String[] args) {
+
+	}
+
+	What does "dynamic" mean?
+	changable.
+	ex: Weather. tire pressure.
+	volume on the iphone.
+	brightness.
+
+2. Aigerim Bakutova ->
+   System.out.print();
+             .println();
+
+How can I print messages in console in red color?
+System.err.print();
+          .println();
+
+
+How creating a class?
+1. make sure the public class name and the file name are exactly the same.
+
+
+2. We need to use CamelCased names. Every first letter should be capitalized. is it a rule? it's a naming convention. We need to use nouns. (rule) -> avoid using spaces between words. Can not use java reserved keywords like while, int.
+We should not start class names from digits. but we can include them as long as they are not in the beginning.
+
+We can only use $ and _ and cant use any other special characters.
+
+It's allowed to start with an underscore or $.
+
+is there any way I can jump the cursor the next line without using println()?
+print("\n");
+print("\t");
+print("\b");
+
+
+
+What are data types? STAR -> situation task action result.
+
+data types -> simplifying computing process. writing code.
+
+problem ->
+
+
+Primitive and non primitive
+
+byte
+int
+long
+
+
+Timur Yunusov: ()
+primitive data types?
+container to stock some info.
+we use primitive and non-primitive data types
+byte 1 byte
+short 2 bytes
+integer 4 bytes --> -+2.2bn
+long 8 byte  -> whole numbers the biggest one
+float 4 byte
+double byte  -> store up to 15 decimal points
+char 2 bytes ->
+boolean 1 bit ->
+
+declaration vs initialization(?
+short year;
+year = 2000;
+
+long populationOfEarth = 7_800_000_000L;
+double tempInChicago = -5.2;
+float tempInSanJose = 10.4f;
+
+chars are just for one symbol, any symbol you can put from keyboard.
+
+we can initialize chars using ASCII table decimal convertion.
+
+char B = '@';
+char grade = B;
+
+System.out.print(grade);
+
+char grade => 'B';  => without quotes for java any letters or words will be considered as variables.
+
+grade = 45;
+
+
+Mariya Shavrova -->
+char variableName = 'C';
+
+variable? => name of some info.
+long mySalary = 1_000_000_000_000L;
+
+if the number is more than 2bn or less than 2bn then we put L.
+
+variables can have different data types. location where you store some info.
+
+difference between float and double? ->
+
+double is 8 bytes. =>
+float is 4 bytes.  => memory allocation.
+double can store  bigger numbers and 15 decimal points.
+float can store up to 2bn and 7 decimal points.
+
+we can assign an integer to float or double.
+
+JDK? Java Development Kit.
+When we install java it brings JDK with it.
+JRE -> JVM and
+JVM -> Machine that transfers bytecode to binary code.
+
+
+Roman Diakun ->
+
+int a = 10;
+int b = 11;
+System.out.println(" "  + (a = b));
+// 11
+
+
+
+% -> modulo;
+the result of a modulo operator will be a remainder of a division of numbres
+
+what is IntelliJ? Tool
+old version is eclipse
+we have commands that are created by IntelliJ devs we can create ourselves
+
+Eclipse, IntelliJ, NetBeans -> IDE(Integrated Development Enviroment)
+IDEs they have automated many operations like compiling the code right after the change
+
+when creating a class it create a public class and name the file with the same name.
+
+many many shorts like creating a main method.
+
+it helps you detect errors in the code by underlining the errors with red line.
+
+colors of the keywords, variables methods, classes are also specific which gives a nice visual feeling.
+
+
+ASCII table.
+
+
+Cholpon ->
+double? primitive data type that can hold numbers with up to 15 decimal points.
+
+we can add d double num1 = 19.88d;
+
+
+type casting? when assign a value to one primitive data type to another data type.
+
+implicit casting -> when you convert smaller to a larger one.
+
+ex:
+int x = 5;
+long y = x;
+
+
+explicit casting -> when you convert larger to a smaller one.
+
+ex:
+long x = 5000;
+int y = (int)x;
+
+y += x;//y=y+x
+
+System.out.println(x);//5000
+System.out.println(y);//10000
+
+x/=y; //x = x/y; //x = 5000/10000;
+
+System.out.println("x");//x
+System.out.println(x);//0 not 0.5 bc both working with long.
+
+Bulat ->
+OS -> Operating System -> MacOS, Windows, Linux.
+Mobile -> Ipad Os, IOs, Andoid.
+MacOS.
+
+javac -> java compilation.
+when we finish putting regular code in java in .java file we run javac compiles the code to .class file which is a bytecode.
+
+bytecode -> JDK -> JRE -> JVM.
+
+JVM - translates bytecode to binarycode which machine language.
+
+01101010;
+
+main()? there is no program without a main method
+main method is the starting point of a program.
+
+
+Assel -> Cali.
+Photographer.
+
+-- Networking --
+
+eligible for drivers licence if the age is at least 16
+
+
+int customerAge = 16;
+
+boolean isEligible =  customerAge >= 16;
+
+
+I have a program, but it's compatible with MacOs and iOs only.
+
+String customerOs = "Linux";
+
+boolean isCompatible = customerOs == "MacOs" || customerOs=="iOs";
+System.out.print(isCompatible);
+
+|| => will return true only when there at least one true.
+
+|| => will return false only when both side's are false.
+
+
+What is Java?
+High level Programming language for developing programs.
+
+Mobile application -> Android;
+SWIFT -> IOs development.
+
+Web Apps;
+Enviroment(Platform) independent -> a program written in Java can be run on any OS without any changes.
+
+
+
+
+Vladimir -->
+background --> cable company.
+troubleshooting --> good.
+
+STAR -> situation(problem) task action result
+
+&& => multiple requirements. programming consits of bunch of logics and rules.
+there are many occassions where you would need to put more than one rule. So && helps as exactly with solving this problem.
+
+logical operator can return true if both sides are true
+it returns false if at least one side is false.
+
+
+Option -> choice.
+Options for movies. => many movies offered but you can choose only one.
+
+
+|| => Options.
+
+it will return true if at least one side is true.
+it will return false when both sides are false.
+
+
+
+Harry Potter || FF6 || Mission Impossible
+
+Scanner sc = new Scanner(System.in);
+
+
+ssn && age > 18 && crediScore > 700
+{
+	approve or not.
+}
+
+
+input => we as users enter information.
+
+inputs are big part of any program.
+
+Think about grocery store.
+
+When you buy stuff from the store you bring your cart to the cashier.
+
+Now when you go there cashier has a program that's running.
+
+what is the functionality of cahsiers program?
+
+1. input items. (price, quantity)
+2. checkout  (payment)
+
+
+Cashiers program to work.
+
+input the prices and products.
+
+Payments:
+you swiped your debit -> PIN code.
+
+
+Altynai?
+What is Scanner is answer to console.
+for input ->
+
+
+Evelina ->
+
+user input? -> record a video.
+
+ternary operator => is the operator that is going to checking the logical operation.
+
+String str =  age>10 ? "teenager" : "kid";
+
+operator precedence => the order in which different operators will be executed
+
+++ -- () */ + - =
+
+&& vs || =>
+if it's && it returns true if both comparisons are true
+
+|| => will return if at least one side is true.
+
+|| vs | =>
+
+if the first part is true
+
+| => java checks both sides regardless of the result of the first one.
+
+
+Logical Operators
+age > 16 && ssn is valid => true
+
+total>100  || customerIsSpecial => false
+
+
+age > 16  & ssn is valid => true
+
+| will return true when both sides are true?
+
+
+Petro ->
+OS?
+System on the computer which controls  the output computer gives to you.
+
+OS helps convert computer language to everything.
+OS enables us to use the modern day application like music player, photo views, video player, and apps like browsers  zoom etc.
+
+ex: Windows, Ios, MacOS, Linux, Android.
+
+What did you do with Unix? => Which commands do you know?
+
+ls -> shows you the content of the current directory.
+cd -> command that changes directory.
+   -> go to root or other directories.
+
+touch -> creates a new file.
+
+mkdir -> new folder.
+vim -> file editor.
+    -> file reader.
+    -> a -> insert
+    -> esc -> leave edit window
+    -> :wq -> write and quit.
+    -> :q! -> force quitN.
+    -> :q  -> quit(are you sure you want quit without svaing changes)
+
+cat -> reads a file.
+
+
+javac JavaFileName.java -> compile
+java JavaFileName -> class name which has a main method.
+
+
+
+Jyldyz  --> Governmental Companies
+        --> USAID(US Agency.for international development)
+        --> Insurance Agent
+        --> Accounting and Finance, Insurance
+        --> Philladephia
+
+What is IF statement?
+is a conditional statement
+we have to choose which one is false boolean.
+
+We have to make decision
+
+Stay home if raining.
+
+Multiple conditions.
+
+
+keyword -->
+It's a statement to control the flow of the program
+
+if a certaion condition is met then run the specific block of code.
+
+
+IF and else?
+if if statment is is false else will be executed.
+
+++incements
+vs
+increment++
+
+increment increased the value of variable by one
+if statement -->
+Video on ++preincrement vs postincrement++
+
+
+++preincrement -> will change the value right away
+
+postincrement will change the value in the next usage of the variable.
+
+
+
+Andrei ->
+% -> modulo sign returns the remainder
+if statement -> statement that we use to control the flow of the program we write.
+
+If the condition is met then program will run the block of code(if statement body)
+
+JVM -> java virtual machine. Translates the bytecode to binarycode(machine languane)
+
+binary   -> 010101101
+bytecode ->
+
+
+we write the code in .java I need to compile it to .class file
+bytecode -> .class file contain bytecode
+Java compiler ->
+
+
+Videos on If statement, JVM, Compiler, JDK?
+
+
+
+Dana --> Milwakee
+     -->
+     --> Fintech (CME)
+     -->
+
+     if
+
+     else if
+
+     two different conditions if the first condition is not met
+     else if works
+
+     else if helps decreasing the runtime(performance) of the program.
+
+     if -
+
+     if -
+
+     if -
+
+
+     variable -> Java element that is used to store some data.
+              --> different naming conventions. camelCase cant use special character.
+
+
+     contant variable -> is not changeble, named with all upper case.
+                      ->int final NUMBER = 10;
+     differnce declaration vs initialization of a variable
+
+     declaring is giving a data type.
+     init -> giving a value for the first time.
+     int num = 10;
+
+     num = 20; reassignment of a value.
+
+     && & -> are used when we need both of the conditions to be true
+
+     && -> first is checked. if the first one is false it's not going to check the second value.
+
+     & -> both of them are checked no matter what.
+
+
+Safie --> Chech Republic
+4 weeks of IT background.
+Journalism
+
+CNN ->
+Washigton Post ->
+
+read a file -> cat FileName
+
+ls
+ls -a -> list hidden files
+ls -l -> full info about files. size, permission levels.
+
+- unix.java
+d -> folder(directory)
+
+rename a file (move)? mv unix.java linux.java
+
+move the file into different directory? mv unix.java newfolderDirectory.
+
+copy a file from one place to another place? -> cp fileName.java destinationFolder.
+
+edit file? vim(vi) FileName.java
+
+opens in read mode.
+in order to start typing we have to hit a letter
+see insert mode on bottom of the screen.
+
+start typing editing.
+
+first esc and :q to quit
+:w -> save
+:q! -> force quit
+
+
+Jonathan Levine ->
+1. switch -> case.
+2. break -> finish the case
+3. default -> like else. if not of the cases are choosen it will go to default can execute code without break. only if it's at the end of tjhe switch statement.
+
+4. if {} -> it's required to put curly braces.
+         -> they are not required in if statement.
+         if not used then only first statement will be considered the block of if.
+         ->
+
+5. How to get a single character from user.
+    Scanner sc = new Scanner(System.in);
+    char userInput = sc.next().charAt(0);
+
+
+Jane -> North Carolina
+
+Dysney ->
+HBO ->
+Netflix ->
+
+1. main method?
+   -> starting point of coding? Entry point of an application.
+   -> {} -> what is their role in java -> curly braces body of code.
+    body of code ->
+    main method, if else, switch, class.
+
+    {} -> separate some block of code.
+       -> define a starting point and ending point for particular c;ass, method, if else, switch statement.
+
+    {} -> define the scope of a class, method, if else switch statment.
+
+    //out of scope.
+
+    import keyword
+    -> we use import when we want to import some class from other java libraries or classes from our project in different package.
+    -> IntellIJ has a feature to add imports automatically.
+
+    javac -> command for compiling .java(human readable code) to
+    .class(bytecode non human readable) file
+
+    jit -> just in time compiler inside JVM. Converts bytecode to binarycode.
+
+
+Nurlan - method definition rule?
+method is one coding logic that has to solve one prolem
+
+access modifier optional specifiers(static, final)  return type methodName(){
+
+}
+
+
+access modifier ->
+1. public -> global access
+2. protected -> within one package or subclass.
+3. private -> access within on class
+4. default -> within one package
+
+
+dataTypes - primitive(int, short, double)
+ 			and non primitive(String)
+
+
+	/*
+	*
+	*-->
+	*
+	*
+	*/
+public static int getTemp() {
+	return 1;
+}
+
+void return type? doesnt have to return anything. It just have to
+perform the logic and return nothing.
+
+add a return statement with matching data type.
+
+
+Malika - Chemistry.
+       - Facebook
+       - Instagram
+       - Self development.
+
+       - Windows. MacOs, Android. Unix. IOs.
+       - Linux -> same as Unix.
+       - Linux is used by Corporate World.
+       - Open source tool.
+
+       Commands:
+       1. create a file -> go to the directory where you want to
+       create a file. touch fileName. check if the file was created
+       touch .program.java
+
+       check hidden files by ls -a.
+       hidden start with .fileName
+
+       2. edit a file? vi, vim, or.
+       to start editing hit a to
+       :q -> quit without saving
+       :w -> save changes
+       :wq -> save and quit.
+       :q! -> force quit.
+
+
+       read file
+       1. cat  -> it will print the content to console
+       2. less -> to read chunk by chunk.
+       3. more -> to read bigger chunks.
+
+
+       check if an application is running?
+       ps can show active processes.
+
+       if facebook is up and runnning?
+       ps -ef | grep facebook
+       ps -ef will show PID of a process.
+
+
+       kill PID(process id)
+       kill -9 PID -> force kill.
+
+       how do I make a remote connection?
+       how to connect to remote servers?
+       how to make ssh connection?
+       how to connect to VM?
+
+
+
+Maksym -> Windows.
+	   -> open relocation.
+
+1. void and double -> return types?
+   void word used in a method -> empty. If you dont want your method to return anything then use void.
+
+
+   double -> if the result of your method is going to be double that you should you double.
+
+
+   parameters same as params and args ->
+   set of path to method -> it's a value that you can pass to a method.
+
+   it's optional -> in methods we can create(defining) methods with params and without params.
+
+   separate params by a comma.
+
+   the role of params in methods? -> the information without which our method can not be executed.
+
+   we write methods to write a logic that we can apply to many scenarios.
+
+   public int calculateCircleArea(int r) {
+   		//return (r * r) * pi;
+   }
+
+
+
+   condition -> if, switch.
+   condition -> old, good, bad, excellent.
+
+
+Daryna ->
+       ->
+       ->
+       -> American Airlines.
+       -> Virgin Group.
+       -> Delta
+       -> United.
+       -> Bonus for flight tickets.
+       -> Turkish Airlines.
+       ->
+
+.length() -> cout of the number of characters. int
+.isEmpty() -> we can check if string is empty. boolean
+char .charAt(int index) -> we can find a character at the given index(position)
+
+index -> position -> 1.
+
+.concat() -> we can combine two Strings together.
+
+
+
+Daniel -> NYC,
+       -> Amazon.
+       -> SpaceX
+
+       a. JIT(JVM) -> Just In time compiler -> .java => bytecode,
+          bytecode to binarycode.
+
+       b. static vs instace method?
+          a. static we can call in another classes.
+             instance we can only call in one class.
+
+          b. indexOf() -> Takes a String and return an int.
+                       -> String str = "HelloNYC";
+                       str.indexOf("o");
+
+
+          c. substring() -> ignoring the words
+
+
+Linux
+
+
+Liudmyla -> GrubHub, Startups.
+
+String str = "DevXSchool";
+
+str.substring(0,5);
+
+method overloading? -> One class can have several method with the same name. Rules:
+Params must be different.
+different amount of params.
+
+name, return type, access modifiers they can be the same.
+
+return type, access modifiers they can also be the different.
+
+coming up with bunch of names is problematic.
+having short names make code cleaner.
+
+
+//implementation -> body.
+class Car {
+
+	void drive(int miles) {
+
+
+	}
+
+	int drive(double gallons){
+		//mpg -> 24m.
+		drive(48);
+	}
+}
+
+
+trim(); -> returns the same String without spaces before and after the String. Still contains spaces in between.
+
+
+int indexOf(String s)  ->  int represents the position of a character in a String.
+int indexOf(char c) ->
+
+
+replace(char oldChar, char newChar) -> DevXSchool.replace('o', 'a'). all occurances of an oldChar.
+
+
+str.lastIndexOf(String str) -> returns the index of the last occurence of a str.
+
+find(printout) the last character of a String.
+
+String str = "Hello World";
+
+ str.length() ->  11;
+
+ str.substring(str.length()-1) -> "d";
+
+ str.lastIndexOf(11);
+ str.charAt(str.length() - 1);
+
+
+
+
+ Rostyslav - What is method chaining?
+ We call multiple methods one after another.
+
+ In case of String methods what are the condition(pre requisite)?
+
+ String Pool vs Heap? == vs equals();
+ two types of memory Java Objects are saved.
+
+ Heap is used by all part of the information. when new methods are created they are saved in the Heap.
+
+Pool -
+
+boolean contains(String str); -> checks whether the str is present in the String.
+
+
+String vs StringBuilder =>
+1. ImMutable - String.
+2. Mutable -> StringBuilder.
+
+Immutable Object - the original object unchangeble with the String methods. Rather all String methods create new String Objects in the Heap.
+
+Mutable Object - the original object is Changeble by the StringBuilder methods.
+
+
+Elnazar -> Computer Science.
+        -> Cenral Asia University - Computer Science.
+        -> Own Bootcamp.
+
+
+    Loop?
+    It's a system which helps us avoid repeated code.
+
+   While and for loop.
+
+   do while.
+
+   while we use when we dont know when we will stop.
+
+   int indexOf(); => String str = "Hello";
+
+    		   => str.indexOf("H") => 0.
+    		   => str.indexOf("a") => -1;
+    		   => str.indexOf("llo") => 2;
+
+
+  Elena -> Junit?
+  Libraries -
+  Params ->
+
+  indexOf() ->
+
+
+++++++++++++++
+Andrei - while loop do while loop?
+Loops help us avoid repeated code. They are used to iterate through a set of statatements multiple times.
+
+while, do while, for loop.
+
+each loop consist of a initialization, condition, condition update statement.
+
+If the condition update statement is missing - any of the loops will enter infinite loops.
+
+what kind of condition updates do you know?
+if the condition is using numbers we can use decrement and increments.
+
+if it's a boolean then use true or false.
+
+while loop.
+When the number of iterations is unknown we use while loop.
+
+We enter the while loop only if the condition is true. so there is a chance that the while loop body will not be executed at all.
+
+
+do while loop.
+When the number of iterations is unknown. but we want to run the body of the loop at least once then it's suggested to use do while loop. bc do while loop body is guranteed to run once. So the condition is checked after the first iteration.
+
+Akmaral ->
+data -> information
+data type -> type of information we can store in programming.
+
+Different types like:
+1. Numbers(whole numbers, decimal points)
+2. chars
+3. boolean
+
+Non-Primitive
+4. String -> it's a data type which stores sequence of characters.
+
+   String has different methods like:
+   1. length() -> which will return the number of characters in a String.
+   2. charAt() -> will return a character at given index of a String.
+
+   String str = "hello";
+   str.charAt(1);
+
+   3. indexOf() -> it takes a String and return int.
+   will return an index of a given String.
+
+   str.indexOf("la");-1;
+
+
+String vs StringBuilder  ->
+1. Non Primitive Data type which is used to convert
+
+
+
+Vladimir -> StringBuilder?
+Type of String we can add additional params.
+
+We can add additional methods to a String.
+
+It's a String that we can modify.
+
+
+String? non primitive data type - contains word or letter.
+
+String -> is a immutable non primitive data type.
+
+StringBuilder is mutable. -> we create one object once in the heap. and we can update the same object using StringBuilder methods which is not possible in Strings.
+
+when we use String methods they create new String objects in the heap.
+
+
+What are Arrays?
+Is the collection of some values of the same data type. it allows us to collect and manipulate a group values of same data type.
+
+ex: array of ints, array of Stings.
+
+1. it's has a fixed size. once it's created it can not be changed.
+2. fast access. it's the fastest collection in java. accessing first element and the last element takes the same amount of time.
+3. it can store primitive and non primitive data types.
+4. in order to refernce a specific element(value) we use indexes and indexes start from 0.
+5. array is an object by itself bc we use new keyword.
+
+
+Jyldyz - Junit?
+Testing framework for java programs.
+@Test ->
+
+How to edit file in Linux or Unix?
+
+how to read a file in linux?
+
+
+
+Timur -> Test Framework for java unit test.
+one of the first tests done by devs.
+open source library.
+
+Junit has annotations -
+@Test
+@Before - runs once before every test
+@BeforeClass - once before per class
+@After
+@AfterClass
+@Ignore - ignore a test. it's included into test report
+@Test(timeout=5000) one 1000 ms in sec
+Assertions help us to validate the actual result of the test to
+expected result of the test.
+
+
+Array?
+container to store multiple data of same data type.
+with fixed number of values.
+
+arrays are fast. accessing the first element and last element take
+about the same time.
+
+Can store primitives and objects. in case of objects it's going to store the reference to the object.
+
+size is fixed.
+
+Arrays is an object by itself
+
+
+
+Akif -> Seatle
+     -> Microsoft, Amazon.
+     -> Corporate over startup.
+     -> Meetup.
+
+Do while and while loop.
+when we need to iterate the work at least once.
+
+while loop is guaranteed to run.
+
+for loop is used when the number of iterations are fixed.
+
+//
+for(int i = 1; i < 11; i++){
+  //body
+}
+
+
+Jane -> String and StringBuilder?
+
+1. String is immutable.
+2. StringBuilder is mutable.
+
+If we initialize our String using literal values this String goes to String pool.
+if we initilaze our String with new keyword it will go to heap.
+
+what is declaring?
+
+String str = "Hello";//StringPool.
+String str = new String("Hello");//heap
+
+we can't change our original String object in the heap once it's created.
+StringBuilder objects in the heap can be modified at runtime.
+
+Since String methods that modify the String return a new String object
+when String methods are called inside a loop there a risk of creating too many String objects in the heap. which will cause ineffient memory usage.
+
+
+they have little different methods.
+
+Bulat -> Array and List.
+
+1. ArrayList is dynamic and arrays are fixed in size
+2. List works with only Objecs. Wrapper class - Integer, Double, Character.
+3. List has many useful method.  - remove, clear, size, get, toString().
+4. performace -> arrays are the fastest collections in Java.
+
+
+
+Aigerim -> String vs StringBuilder?
+Both of them are classes which work with character patterns
+
+String objects are immutable
+StringBuilder objects are mutable
+
+When I need to manipulate a String inside a loop I would go with
+StringBuilder.
+
+String pool vs String in the Heap.
+String created via a literal
+vs Strings created via new keyword.
+
+
+Array vs List.
+Arrays are fixed in size they have fixed size.
+Lists are dynamic in size. Size can be changed at runtime.
+
+Arrays are faster to access an element.
+Lists can only store Objects so no primitives.
+Wrapper classes can be used to store numbers and booleans etc.
+<> -> dimonds
+<Integer>
+Arrays can store both primitives and Objects.
+
+How to sort an array?
+Arrays.sort(); => Arrays.sort(arr, Collection.reverseOrder());
+
+
+Roman ->
+
+1. SET vs List?
+  Both implement Collection Framework.
+  List is an ordered collection of same objects and it can allow duplicate values.
+
+  Whereas Set is a unorered collection of same data type objects, where dupliacte values are not allowed. Thus Set is a collection of Unique objects.
+
+  List has similar methods to Set.
+
+  Both List and Set are mutable.
+  They can store only Object(Non-primitive data), no primitive data type.
+
+  In SET we can not store duplicate data, so we store unique valujes only
+  In Set values are unstored. In Set we cannot access elements based
+  on indexes.
+
+  add method return boolean. So we can use that to find out if we are trying to add a duplicate value.
+
+  Set and List are dynamic in size. Size can be changed at runtime.
+
+
+  Array and List?
+  Array stores a collection of primitive data types.
+  Array runs faster. (you can access first and last element fast.)
+  Array has a fixed size and cannot change it's size at runtime.
+
+  List is an implementation of Collection Framework.
+  where it provides us with many useful methods like
+  get()
+  remove
+  contains
+  etc.
+
+  List is mutable and has a dynamic size, it can
+  Lists can only store objects.
+  Wrapper classes can be used to store primitive data type values with the help of autoboxing and unboxing.
+
+  Mutable or immutable objects.
+
+  immutable -> unchangable.
+  vs
+  mutable   -> changable.
+
+
+  String[] arr = new String[]{"123","dghgf","tgrb"};
+  arr[1]= "ghn";
+

@@ -30,7 +30,18 @@ Set already contains the value.
 it's going to add the collection to the Set
 
 
+###Iterators
 
+boolean hasNext(): It returns true if Iterator has more element to iterate. similar to isEmpty();
+Object next(): It returns the next element in the collection until the hasNext()method return true. This method throws ‘NoSuchElementException’ if there is no next element.
+void remove(): It removes the current element in the collection. This method throws ‘IllegalStateException’ if this function is called before next( ) is invoked.
+
+####LinkedHashSet
+Collection of Unique Ordered Objects. Insertion order
+
+
+####TreeSet
+Collection of Unique Ordered Objects. Alphabetical, or numeric order. asc by default,  can be changed.
 
 
 
