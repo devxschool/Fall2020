@@ -1075,3 +1075,48 @@ Roman ->
   String[] arr = new String[]{"123","dghgf","tgrb"};
   arr[1]= "ghn";
 
+
+
+Safie -
+TreeSet, HashSet, LinkHashSet ->
+Set is a collection in Java it implements Collection interface.
+There are three implementations of SET -> TreeSet, HashSet, LinkHashSet.
+All of them store unique Objects.
+LinkedHashSet stores Objects in insertion order.
+TreeSet -> stores in natural order like alphabetical or numerical.
+HashSet -> is the fastest Set implementation. Order of the elements are not tracked.
+
+we can not access elements by indexes.
+the most dynamic way to iterate through elements in a SET we can use Iterator interface.
+
+Iterator can access elements by next() method.
+hasNext() method is similar to isEmpty() in String or Lists. return true if there is an element
+remove() -> we can remove elements from the SET.
+
+Java version 8. -> is the enterprise level version.
+
+Difference between Array and List?
+Array is a set of elements, set of values of same data type.
+Arrays can hold and store primitive and non primitive data types.
+
+List cannot hold primitive data type. If we want to work with primitive data types. We need to use wrapper classes
+All primitive data types have Wrapper Classes.
+
+Arrays can be single and multidimensional;
+List can be single and multidimensional;
+
+Arrays are the fastest collection in Java. instant lookup of first and any other element takes about the same time.
+Arrays are fixed in size and List are dynamic in size.
+We can add and modify the number of elements in List
+at runtime.
+
+Difference between == and .equals()?
+
+
+
+
+
+
+
+
+
