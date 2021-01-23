@@ -49,6 +49,35 @@ T is a generic data type that is defined at the Map initialization;
 1. If the key already exists in the map the key value will be updated.
 so the key is going to point to a new value.
 
+2. If the key doesnt exist in the map nothing is going to happen.
+
 It returns the old value.
-        
+
+
+
+####public Set<SameAsKey> keySet()
+return a Set of all of the keys. We are creating a new separate
+Set collection of just the keys. Why Set and why not List?
+Bc keys are unique.
+
+####public Collection<SameAsValue> values();
+return a Collection of all of the values. 
+
+Collection is like a List; it stores duplicate values
+but one biggest difference is that it doesnt have .get(int index)
+so we can not access values based on index.
+
+
+
+####Map.Entry<KeyDataType,ValueDataType>
+Map.Entry is an interface(data type) that represents one entry(key value pair)
+in a Map. So far we know how to get Set of Keys and how to get Collection of
+values. Now, question is: how do we get both keys and values?
+
+ex:
+
+    Map<Integer, String> map = new HashMap<>();
+    map.put(12,"John Doe") -> this is one Map.Entry.
+    map.put(13,"John Doe") -> Entry
+    map.put(13,"John Doe")    
         

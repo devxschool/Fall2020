@@ -1112,6 +1112,33 @@ at runtime.
 
 Difference between == and .equals()?
 
+Petro -> Record a video on what are Maps with example.
+
+STAR approach? Situation(Problem) Task Action Result.
+
+When you have aa situation where you need to store a large amount information but have an easy access to that
+information, you could you Maps.
+
+Maps are key value collection which maps keys and values.
+Some characteristics about Maps are:
+1. keys can not be duplicate
+2. each key in the map stores a value.
+3. if you want to access the value you can get it by passing a key.
+4. There are three implementations of a Map -> HashMap is unordered colleciton.
+LinkedHashMap -> ordered by insertion order
+TreeMap -> ordered by natural order.
+
+has different methods to lookup the value, replace, remove.
+
+List vs Set -> Record a video on List vs Set.
+List is an order collection
+Set is randomized. Whenever you enter values they will be in a random order. Sets do not allow any duplicates.
+
+
+
+
+
+
 
 
 
