@@ -1135,15 +1135,43 @@ List is an order collection
 Set is randomized. Whenever you enter values they will be in a random order. Sets do not allow any duplicates.
 
 
+Assel -  what are Maps?
+
+When we need to store big amout of information and at the same time have an easy way to access the info.
+Key and Value Collection.
+
+Some characteristics about maps
+Keys can not be duplicate. each key points to a value.
+
+HashMap, LinkedHashMap, TreeMap.
+
+put(key,value) -> create
+put(key,value) -> updates the value if the key exists
+replace(key, value) -> updates the value only if the key exists.
 
 
+String vs StringBuilder?
+Represent sequence of chars in java. Objects of String immutable, Objects of StringBuilder are Mutable.
+If we are using less then 10 method we can use String.
+if we are manupilating the String more than 10 times we should use StringBuilder, so that we dont create
+too many temp objects in the heap.
 
+Array vs List?
+Array is the collection in java which has a fixed size.
+List is a dynamically sized.
 
+Array can store primitive and non-primitve data types.
+Lists can store Objects only. Wrapper classes can be used to store primitive data.
 
+Arrays are the fasted collection in Java.
 
+Read a file in unix?
+Less and cat
 
-
-
-
-
-
+Edit a file in unix
+vi ->
+vim ->
+a -> to enter edit mode
+:wq
+:q -> quit without saving
+:q! -> force quit!
