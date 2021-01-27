@@ -15,7 +15,7 @@ public class CandidateApproveService {
         Candidate c1 = new Candidate();
         c1.name = "John Doe";
         c1.yearsOfExperience = 10;
-        c1.hasEad=false;
+        c1.hasEad   =  false;
 
         System.out.println(isApproved(c1));
 

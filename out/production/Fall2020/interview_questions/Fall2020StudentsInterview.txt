@@ -1175,3 +1175,23 @@ a -> to enter edit mode
 :wq
 :q -> quit without saving
 :q! -> force quit!
+
+
+Rostyslav ->  Logical operators.
+Operators that return boolean.
+&& -> And => when both sides are true
+|| -> Or => either side must be true
+
+Array
+is a set of elements it stores a collection of only primitive data types.
+Array is fixed in size.
+Array is the fasted collection.
+.get(int index);
+
+bc it starts with a 0 length-1
+
+Classes are custom data type, non primitive data types. We can actually create are own classes.
+Objects are instances of a class. they can have state and the methods.
+
+
+

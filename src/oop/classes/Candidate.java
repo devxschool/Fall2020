@@ -47,10 +47,3 @@ public class Candidate {
         email = emailAddress;
     }
 }
-
-
-class Mentor{
-    public Mentor(){
-
-    }
-}
