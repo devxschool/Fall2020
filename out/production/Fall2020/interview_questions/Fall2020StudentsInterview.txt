@@ -1195,3 +1195,67 @@ Objects are instances of a class. they can have state and the methods.
 
 
 
+####Instance vs local
+instance variable are the characteristics of an Object.
+instance variable are declared on a class level and they can have access modifier.
+Also, instance variables have default values.
+When an object of a class is created instance variables get initialized with default values.
+But usually Constructors are used to reinitialze t
+he instance variables with meaning starting values(info about a particular object)
+
+
+Local variables are declared on a method or a block level. they are only accessible inside this block.
+Local variables can not have access modifiers, and they dont have default values thus you have to make
+that the local variable is initialized by you(explicitly)
+
+Daniel -> Instance variables
+STAR - Situtaion Task Action Result.
+
+what is an object?
+We are creating some data type and we are declaring new keyword.
+Constructor?
+Is a specific method that we can put inside a class.
+Constructor is going allow us to give our default information when we create it.
+
+public SameAsClassName() {
+    this.
+}
+Map?
+
+
+Dana - What an Object?
+is an instance of a class. If you are in a situation that you need to represent any type of
+object like person, user.
+
+you can create a class in Java and that class will all of the characteristics about this kind
+of objects.
+
+What does one object have? can have a name.
+State and Behavior.
+
+What are instance variables?
+are the variables that are declared on the class level.
+they can have access modifiers.
+they can have default values.
+
+class Fruit {
+   //current class instance variable.
+    String name;
+
+    public Fruit(String name){
+      this.name = name;
+    }
+}
+
+main{
+ Fruit f = new Fruit("Apple");
+}
+Constructor?
+Objects can only be created by calling a contructor.
+what if I dont have any constructors defined in the class.
+Java provides a default constructor.
+If we didnt define a constructor by ourselves. Java provides a default no-arg constructor;
+
+is a special method that is used to initialze instance variables.
+to force the users of this class to pass required(desired) amount of params.
+it has no return type.

@@ -7,7 +7,7 @@ public class Room {
     //these are going to be instance variables of the object.
     int beds;
     int baths;
-    Map<String, Integer> bedTypes;
+    Map<String, Integer> bedTypes;//
     boolean isAvailable;
     int number;
 
