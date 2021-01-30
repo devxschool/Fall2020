@@ -1259,3 +1259,41 @@ If we didnt define a constructor by ourselves. Java provides a default no-arg co
 is a special method that is used to initialze instance variables.
 to force the users of this class to pass required(desired) amount of params.
 it has no return type.
+
+
+Malika -
+instance variable?
+STAR -> instance variables come into play in OOP.
+In OOP we create custom datatypes. Imagine you want to store info about any entity(something) related to your business
+for all info about one Employee, instead creating multiple primitive dataTypes we can just store all info in a newly created
+data type called Employee.
+
+Employee data can be created by creating a new class Employee;
+
+in a class definition we need to create a structure for the new data type. The structure will include defining what
+kind of and how much info we want to have for each Employee. This choice will result in having same amount of
+info about every single Employee. This is achieved by instance variables.
+
+Instance variables are created on a class level.  they are accessible in any instance methods and in constructors.
+
+Instance variables are initialized when new Object from this class is created.
+Instance variables belong to a specific Object.
+
+Instance variables have default values. But we usually use constructors to initialize the instance variables.
+
+
+
+What are Objects?
+Objects are usages of Classes. instance of classes.
+Object's have states and behaviors. what kind of states and behaviors an object will have will be defined in a class.
+Classes define those states and behaviors.
+
+
+We have a class and class will have characteristics, state.
+
+Class and Object?
+We have class and class will have objects.
+
+Constructor?
+is used to initialize instance variables.
+

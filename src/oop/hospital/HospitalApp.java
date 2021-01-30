@@ -12,13 +12,17 @@ public class HospitalApp {
 
         //can please do something so I can see the whole information about the patient.
         Patient p6 = new Patient("01/20/1991", "Tesla Musk", 'M', "777-777-7777");
-        Patient p7 = new Patient( "SpaceX Musk", 'M', "777-777-7777");
+        Patient p7 = new Patient( "SpaceX Musk", 'S', "777-777-7777");
 
+        System.out.println(p1.getBalance());
+        p1.orderMedicine("Advil");
+        System.out.println(p1.getBalance());
+        //without creating any object we are able to access static members
+        Patient.advilPrice=20;
 
-        p6.printAllInfo();
-        p1.printAllInfo();
-        p3.printAllInfo();
-        System.out.println(p1.getAge());
-        System.out.println(p2.getAge());
+        p1.orderMedicine("Advil");
+        System.out.println(p1.getBalance());
+        p5.orderMedicine("Advil");
+        System.out.println(p5.getBalance());
     }
 }

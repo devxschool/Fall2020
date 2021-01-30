@@ -47,3 +47,36 @@ or methods that take any external information and use it to change the state of 
 Instance Methods are the methods tha exclusively belong to a particular object.
 So you can use them only after creating an Object and from a reference to that object.
 
+
+###What is encapsulation? 
+Encapsulation is a process of hidding instance variable(by making them private) from being accessed outside of classes in order to avoid
+undesired values being assigned to the intance variable. Instead Getter and Setter methods
+are used to get the value and update the value of an instance variable respectively.
+
+With Encapsulation we can add certain conditions in setter method which will restrict undesired 
+values to be assigned.
+
+
+
+###POJO and BEANs
+Plain Old Java Object and Beans are classes that have instance variables and getters and setters only
+
+
+
+
+###Static Members
+Static Members are variables and methods that do not belong to an object.
+Static variables considered to be global variables, which means static variables are 
+global to all objects that have been or will be created from a class. 
+
+there is only one value of a static variable for all objects created from the class.
+
+###Static methods
+Static methods can we used without creating an object. 
+Helper methods(Utility methods) are usually static methods.
+
+Wrapper classes have many utility methods. 
+Collection class,
+Math.max(), Math.min()
+
+Utility methods are the functions which dont require object state info to be executed. 
