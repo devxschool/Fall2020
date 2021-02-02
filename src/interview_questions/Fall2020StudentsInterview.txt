@@ -1297,3 +1297,67 @@ We have class and class will have objects.
 Constructor?
 is used to initialize instance variables.
 
+Elena ->
+instance variable vs static variable?
+instance variables are characteristics of an object. so they belong to an object.
+Classes are custom data type. Blueprint for the objects.
+Object is an instance of a class.
+instance variable - we use instance variable in OOP.
+instance variables are created on a class level.
+instance variables that can be accessed by any method.
+instance variables have default values -> 0 for numbers,  false for booleans.
+
+class Transaction {
+   int transactionID;
+   DateTime dateTime;
+   double amount;
+   String location;
+
+   public Transaction(double amount, String location){
+    this.amount = amount;
+    this.location = location;
+   }
+ }
+
+ main{
+    Transaction t = new Transaction();
+    }
+
+ access modifiers?
+
+ Constructors ->
+ 1) are used to initialize an object from a class using new keyword.
+
+ 2) is a special method that we use to initialze the instance variables and also use to force the user to
+ provide the required info when creating an object from this class.
+
+ 3) Encapsulation?
+     is a process of hiding instance variables by making them private, so we are not able to access them outside of
+     the current class. in order to avoid undesired values being assigned to those instance variables.
+
+     we use getter and setter methods to get and update the values.
+     since the user can only update the value though a setter method we have an option to put some check condition to the
+     value that's being passed to the setter method.
+
+
+
+ What is static??
+  Static is a variable or a method doesnt belong to an object.
+  Same as global members.
+  Static variables are global to all objects that have been created from the class.
+  When you need a value to be exactly the same for all object crested from the class.
+
+  we can also declare methods as static -> we usually make methods static when we are not using any object state information;
+  rather it's a function which can be executed without the object state.
+  static methods can be used without creating a class;
+
+  Math.max();
+
+
+
+
+
+
+
+
+

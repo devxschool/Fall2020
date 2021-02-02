@@ -70,3 +70,13 @@ Static variables considered to be global variables, which means static variables
 global to all objects that have been or will be created from a class. 
 
 there is only one value of a static variable for all objects created from the class.
+
+###Static methods
+Static methods can we used without creating an object. 
+Helper methods(Utility methods) are usually static methods.
+
+Wrapper classes have many utility methods. 
+Collection class,
+Math.max(), Math.min()
+
+Utility methods are the functions which dont require object state info to be executed. 
