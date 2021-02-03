@@ -6,21 +6,42 @@ public class Patient {
     //Patient phoneNumbers should only be assigned number which meet the following format
     //ddd-ddd-dddd
 
-    //static variable are global variables.
-    static final int ibuprofenPrice = 120;
-    static int advilPrice = 10;
-    private static int halls = 5;
+    //instance initializer;
+    //Purpose to initialze all instnace variables that have default values(default to your appliaction)
+    //runs once per each object
+    //second to run
+    {
+        nationality = "American";
+        dob = "xx/xx/xxxx";
+        System.out.println("Instance Initialzier");
+    }
 
-    private final String dob;
+    //to initialize static variables
+    //runs once per program when the first object from this class is created
+    //first thing to run
+    static {
+        ibuprofenPrice = 120;
+        advilPrice = 10;
+        halls = 5;
+        System.out.println("Static Initialzier");
+    }
+
+
+    //static variable are global variables.
+    static final int ibuprofenPrice;
+    static int advilPrice;
+    private static int halls;
+
+    private String dob;
     private String fullName;
     private char gender;
     private String phoneNumber;
-    private final String nationality;
+    private String nationality;
     private double balance;
     private boolean married;
 
     /**
-     * C
+     * 3 one to run
      *
      * @param dob
      * @param fullName
@@ -30,6 +51,7 @@ public class Patient {
      */
     public Patient(String dob, String fullName, char gender, String phoneNumber, String nationality) {
         //give initial state of an object.
+        System.out.println("Constructor");
         this.dob = dob;
         this.fullName = fullName;
 
@@ -56,6 +78,7 @@ public class Patient {
 
     public Patient(String dob, String fullName, char gender, String phoneNumber) {
         this(dob, fullName, gender, phoneNumber, "American");
+
     }
 
 

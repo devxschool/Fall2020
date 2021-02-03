@@ -14,11 +14,6 @@ public class User {
        in the contacts list.
      */
 
-
-
-
-
-
     public static void main(String[] args) {
         AppStore appStore = new AppStore();
         fillOutAppStore(appStore);

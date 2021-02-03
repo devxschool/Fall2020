@@ -1361,3 +1361,47 @@ class Transaction {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Akif - Constructor?
+ is a special method that used to create a new object.
+ if we didnt define a constructor java provides a default constructor.
+ we can overload constructors, we can put different set of params in the constructor.
+ constructor chaining - calling one constructor in another constructor.
+ Constructors are usually used to initialize instance variables.
+
+ instance variable?
+ charcateristics of an object. we declare it on a class level.
+ Class is a blueprint for objects.
+ can have access modifier, publiec, private
+ default values => when an instance variable is not initialized in the constructor it will have a default value
+ when an object is created.
+
+ What is static?
+ static can be variable or method
+ static method can be used without creatig an object;
+ static variable is a global variable for all objects created from the class;
+
+ Encapsulation? STAR
+ is a process of hiding instance variables by using private keyword;
+ we dont have access to the variable outside of the class;
+ to get access to this private variables we use getter and setter methods;
+
+
+
+
+
+
+
+
