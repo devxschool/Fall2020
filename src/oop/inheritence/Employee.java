@@ -10,7 +10,7 @@ public class Employee {
     private String name;
     private String dob;
     private String title;
-    double salary;
+    public double salary;
 //    private Department department;
 
 
@@ -30,6 +30,11 @@ public class Employee {
 
     public Number grantBonus() {
         return salary * 0.05;
+    }
+
+    //print out title
+    private void printTitle(){
+        System.out.println(title);
     }
 
     public void promote(){
@@ -66,5 +71,10 @@ public class Employee {
 
     public void setSalary(double salary) {
         this.salary = salary;
+    }
+
+
+    public static double getW2(double salary) {
+        return salary * 0.20;
     }
 }

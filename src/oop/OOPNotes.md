@@ -108,6 +108,8 @@ when variables are final -> their values can not be changed once initialized.
 when methods are final ->  final method can not be overridden. Note:
 We are able inherit final methods but not override it.
 
+final classes -> means we can not inherit a class;
+
 
 
 ###Method overloading vs overriding
@@ -128,5 +130,21 @@ than the method in the parent class.
 
 
 
+####Abstract
+You want to have multiple sibling(same type of) classes like you have Cars(Electric, Gas, Diesel) you want each class
+to have certain behaviors, but you know those behaviors are going to be implemented differently in each class;
+so these methods can be declared as abstract methods, which do not require the body to be implemented right away;
 
 
+Abstract clases are used to create methods with no body which are meant to be implemented by direct sub classes.
+Each concrete(non-abstact) sub-class will have to implement the abstract methods. 
+
+Abstract classes can not be private or final. -> bc abstract classes are meant to be inherited;
+
+
+###What is the difference between inheriting an abstract method vs non-abstract method?
+Abstract methods dont have any body and are meant to be overridden. They have to(must) be overridden. 
+
+Non-abstract methods - are not required to be overridden, which means the sub-class is okay with the implementation of 
+a method that's coming from the super-class; if the sub-class is not okay with the implementation
+sub-class has an option to overridde that implemantation with it's own one;

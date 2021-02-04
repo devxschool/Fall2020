@@ -1354,26 +1354,6 @@ class Transaction {
   Math.max();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  Akif - Constructor?
  is a special method that used to create a new object.
  if we didnt define a constructor java provides a default constructor.
@@ -1399,9 +1379,36 @@ class Transaction {
  to get access to this private variables we use getter and setter methods;
 
 
+Powerful -
+variables can only be declared, initialized or reassigned, called.
+
+Maksym ->
+instance vs static?
+instance variable are declared in the class.
+they are initialized when the object is created.
+instance variables are characterstics of an object, state of an object.
+have access modifiers.  public private
+default values;
+store info about an entity related to our business.
+Imagine you need to store info about Employee so you can create.
+
+static - they can hold the same values for all objects.
+they can be called by a class name they dont require an object.
+WHen you need to store a value across all objects.
+Global variables that belong to a class and not to an object.
 
 
+Inheritance - process when you envolve public properties and behaviors from a Super class.
+you can only inherit one class in java.
+All classes in java implicitly inherit Object class.
+extends keyword is used to inheritance
+Multi level.
 
-
-
-
+What is method overridding?
+Only inherited methods can be overridden
+2.Final and static methods cannot be overridden
+3.The method in the child class must have the same signature as the method in the parent
+4.The method in the child class must be at least as accessible or more accessible than the method in the parent class.
+5.The method in the child class may not throw a checked exception that is new or broader than the class of any exception thrown in the parent class method.
+6.If the method returns a value, it must be the same or a subclass of the method in the parent class, known as covariant return types.
+7. Use the super keyword to invoke the overridden method from a subclass.

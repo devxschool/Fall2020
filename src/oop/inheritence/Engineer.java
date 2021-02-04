@@ -13,6 +13,7 @@ public class Engineer extends Employee {
 
     //onTarget or not on Target
     private boolean isOnTarget;
+    public double salary;
 
     public Engineer(String name, String dob, String title, double salary) {
         //calling a constructor from the direct super class
@@ -31,9 +32,23 @@ public class Engineer extends Employee {
         super.salary += 10000;
     }
 
+    public void promote(int promotion) {
+
+    }
+
     @Override
     public Double grantBonus() {
         return salary * 0.2;
+    }
+//
+//    @Override //printTitle is a private method in Employee(Super) class. private methods
+    //are not inherited, thus they can not be overridden
+//    public void printTitle(){
+//
+//    }
+
+    public void printTitle() {
+
     }
 
     public Double bonus() {
@@ -46,5 +61,15 @@ public class Engineer extends Employee {
 
     public void setOnTarget(boolean isOnTarget) {
         this.isOnTarget = isOnTarget;
+    }
+
+    /**
+     * same rules as overriding instance methods.
+     * but we call it method hiding;
+     * @param salary
+     * @return
+     */
+    public static double getW2(double salary) {
+        return salary * 0.20;
     }
 }
