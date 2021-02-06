@@ -155,3 +155,20 @@ interface definition - interaction between two objects.
 
 UI -> User Interface - part of an application that interacts with users.(What user see); Frontend
 API -> Application Programming Interface - backend. interaction between the code and the dev.
+
+
+Interfaces in java are abstract data types that have abstract methods which need to implemented by concrete classes.
+Purpose of an interface is very similiar to Abstract classes except that interfaces can not have regular methods.
+and interfaces support multiple implemenations. So one concrete class can actually implement more than one interface. 
+whereas classes can only extend one class. Which is one of the downsides of Abstract classes compared to interfaces.
+
+
+What if and Abstract class would only have abstract methods, how it would be different from an interface?
+1. classes in java can only extend one class, so once you have extended that one class you can not extend more. 
+with interfaces a class can actually implement more than one interface.
+
+2. Abstract still has a possibility to add non-abstract instance methods, instance variables an play the role of 
+regular Super class in inheritance. Whereas Interfaces cat not have instance variables nor instance methods. 
+
+
+
