@@ -1,11 +1,11 @@
 package oop.inheritence.abstractclass;
 
-public class Gas extends Car{
+public class Gas extends Car {
     //miles per gallon
     private double mpg;
 
-    public Gas(String model, long mileage, String make, String color, double mpg) {
-        super(model, mileage, make, color);
+    public Gas(String vin, String model, long mileage, String make, String color, double mpg) {
+        super(vin, model, mileage, make, color);
         this.mpg = mpg;
     }
 
@@ -23,6 +23,11 @@ public class Gas extends Car{
 
     public void setMpg(double mpg) {
         this.mpg = mpg;
+    }
+
+    @Override
+    public void startEngine() {
+
     }
 
     @Override//changing how this behavior(method) works

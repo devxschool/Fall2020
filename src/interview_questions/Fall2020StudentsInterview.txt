@@ -1412,3 +1412,33 @@ Only inherited methods can be overridden
 5.The method in the child class may not throw a checked exception that is new or broader than the class of any exception thrown in the parent class method.
 6.If the method returns a value, it must be the same or a subclass of the method in the parent class, known as covariant return types.
 7. Use the super keyword to invoke the overridden method from a subclass.
+
+Ekaterina - difference between method overloading and method overriding.
+
+overloading is using different params.
+overriding -> this concept class is used in inheritence, when one class inherits methods of another class.
+and we have an option to override some methods. we can use @override, not required but helpful.
+same access modifiers, more accessible.
+return types should also be the same or covariant.
+
+override static methods?
+hiding methods.
+
+private methods.
+redeclaring.
+
+Abstraction?
+similar to inheritance. we can not create an object from abstract class. methods in Abstract class can be
+regular or abstract.
+
+abstract methods -> they must be overridden. Main purpose of the abstract methods to be overridden later by concrete
+classes.
+
+abstract classes can not be private or final
+abstract methods can not be final or private.
+
+Junit?
+How do you run multiple test classes together?
+by using Runner class of junit. @RunWith();
+
+assertEquals("Error message for this test",expected, actual);

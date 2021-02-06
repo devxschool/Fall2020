@@ -57,7 +57,5 @@ public class AssignmentOperators {
         currentYearSalary*=salaryIncrease;
         currentYearSalary*=salaryIncrease;
         System.out.println(currentYearSalary);
-
-
     }
 }

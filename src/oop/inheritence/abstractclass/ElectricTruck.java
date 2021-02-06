@@ -6,7 +6,6 @@ public class ElectricTruck extends Truck {
         super(vin, model, mileage, make, color, trailerModel);
     }
 
-
     @Override
     public void startEngine() {
 

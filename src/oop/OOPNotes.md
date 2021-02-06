@@ -148,3 +148,13 @@ Abstract methods dont have any body and are meant to be overridden. They have to
 Non-abstract methods - are not required to be overridden, which means the sub-class is okay with the implementation of 
 a method that's coming from the super-class; if the sub-class is not okay with the implementation
 sub-class has an option to overridde that implemantation with it's own one;
+
+
+###Interface
+interface definition - interaction between two objects.
+
+UI -> User Interface - part of an application that interacts with users.(What user see); Frontend
+API -> Application Programming Interface - backend. interaction between the code and the dev.
+
+
+
