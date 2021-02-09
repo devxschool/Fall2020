@@ -171,4 +171,9 @@ with interfaces a class can actually implement more than one interface.
 regular Super class in inheritance. Whereas Interfaces cat not have instance variables nor instance methods. 
 
 
+###Interfaces extend an interface
+Classes implement interfaces
+classes extend classes
+Interfaces extend interfaces.
+
 

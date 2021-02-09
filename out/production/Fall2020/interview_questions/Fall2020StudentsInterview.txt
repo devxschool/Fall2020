@@ -1442,3 +1442,54 @@ How do you run multiple test classes together?
 by using Runner class of junit. @RunWith();
 
 assertEquals("Error message for this test",expected, actual);
+
+
+Daniel - Class and abstract class?
+in a class you can create methods and attributes.
+a constructor
+
+IN OOP the core concept is a class. a class is a  blueprint for an object. Object is an instance of a class.
+
+Abstract class - hiding certain information.
+abstraction can be achieved by abstract classes and interfaces.
+
+abstract class can have both abstract and non abstract methods.
+the abstract method needs to be overridden in the subclass
+abstract class can not be instantiated.
+
+inheritance - solves the duplicate code problem.
+you can reuse methods from superclass.
+subclass is a child class
+superclass is a parent class.
+only public and protected attributes and methods can only be inherited.
+
+Override the methods? ->
+@Override
+only inherited methods can be overrdden
+final and static can not be overridden
+signature of the methods must be the same.
+child class method must be same or more accessible.
+same or covariant return type.
+
+
+final - it can be applied to methods variable and classes
+for variables the value can not be changed once initialized
+final methods can not be overridden
+final class can not be inherited, extended.
+
+
+instance vs static  ->
+ static is a charactersitics that stay the same throught all objects.
+ instance variables are variables that are declared on a class level. they can have default values and usually initialzed using
+ construct. instnace variables are states of an object.
+
+
+ Roma - what is an Interface?
+ Interface is a set of some specification from a super class.
+ methods in the interface are abstract
+
+ Polymorphism - more than one form. is a special OOP feature that allows me to perform some action
+ in different way. Human interface Man and Women classes.
+
+
+ Do the same thing but in different way.
