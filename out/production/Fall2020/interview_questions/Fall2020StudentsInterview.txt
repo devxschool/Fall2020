@@ -1493,3 +1493,22 @@ instance vs static  ->
 
 
  Do the same thing but in different way.
+
+ Akmaral - Interface vs Abstract class?
+ Abstract classes can have abstract and non abstract methods.
+ abstract methods must be implemeted by sub-classes.
+
+ In interface we can only have abstract methods.
+
+ Main difference -> subclasses can implement multiple interfaces.
+ and subclasses can extend only one class.
+
+ Polymorphism - it's an ability when a Datatype can take different shapes.
+ College super class or interface.
+
+ and subclasses are sub-colleges like law, medical, tech etc.
+
+ ArrayStoreException ->
+ ParseException -> when trying to parse a value from a String to Numbers, Date etc.
+ ArrayIndexOutOfBound
+ StringIndexOutOfBound

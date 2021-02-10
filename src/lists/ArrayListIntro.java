@@ -1,8 +1,11 @@
 package lists;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 public class ArrayListIntro {
+
+    public static Map<Integer, String> map;
 
     public static void main(String[] args) {
         //shortcut for import -> alt + enter for windows
@@ -38,7 +41,7 @@ public class ArrayListIntro {
 
         //instead of [] lists use .get(int index) method to access
         //specific elements
-        System.out.println(firstList.get(2));
+        System.out.println(firstList.get(10));
 
         //same as arr.length.
         System.out.println(firstList.size());

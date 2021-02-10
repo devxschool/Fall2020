@@ -12,7 +12,6 @@ public class Women extends AbstractPerson {
         System.out.println("ate 200gm");
 //        foodConsumed+=0.2;
 //        weight+=0.2;
-
     }
 
     @Override
