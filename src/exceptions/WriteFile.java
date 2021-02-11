@@ -17,7 +17,6 @@ public class WriteFile {
         fileWriter.write(txt);
         fileWriter.close();
     }
-
     /**
      * Do not crash, but give a warning message
      * and continue the program.
@@ -27,17 +26,22 @@ public class WriteFile {
      * @param txt
      * @param path
      */
-    public static void writeToFile(String txt, String path) {
+    public static void writeToFile(String txt, String path) throws IOException {
+        FileWriter fileWriter = null;
         try {
-            FileWriter fileWriter = new FileWriter(path, true);
-            fileWriter.write(txt);
-            fileWriter.close();
+            fileWriter = new FileWriter(path, true);
+            for (int i = 0; i < 10; i++) {
+                fileWriter.write(txt);
+            }
+
         } catch (IOException e) {
             System.out.println("Catch in a method");
             System.out.println("Wrong path to a file");
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
+        finally {
+            fileWriter.close();
+        }
     }
-
 }

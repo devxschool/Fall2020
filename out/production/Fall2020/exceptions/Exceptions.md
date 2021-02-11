@@ -48,3 +48,18 @@ Handled means the code that throws a checked exception is wrapped inside a try c
                fileWriter.write(txt);
                fileWriter.close();
            }
+           
+           
+###Throw VS Throws
+Throws keyword is used to declare checked exceptions in the method signature
+
+Throw keyword is a command for java to fail the program with the given Exception.
+
+
+###Finally 
+finally is a block of code which can be placed after try or catch block. Finally block runs regardless whether
+an Exception was thrown or not. 
+
+Finally blocks are needed for close statements. WriteFile and ReadFile(I/O) Classes use bufferedStreams(byte[])
+which need to be closed after usage. So if an exception is thrown while writing or reading a file some bytes could end up
+lost in the middle.

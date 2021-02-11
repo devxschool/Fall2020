@@ -1512,3 +1512,32 @@ instance vs static  ->
  ParseException -> when trying to parse a value from a String to Numbers, Date etc.
  ArrayIndexOutOfBound
  StringIndexOutOfBound
+
+
+
+
+Elena - Exceptions - Video
+Exception occurs when there is a problem in program.
+
+Checked   -
+Unchecked -
+
+Abstract class and regular class? - Video
+abstract class can have abstract and non-abstract methods.
+
+Petro - Exceptions
+Code runs into a problem.
+
+Checked   - program can skip and continue.
+compile time exceptions. These exceptions cause compilation error unless they are handled in try catch block.
+or throws keyword in the method signature.
+
+   throw keyword - it's  keyword that you can use to throw an Exception. It is a command for java to fail this
+   program and print out the Exception message.
+   throw new IndexOutOfBountExceptio("Something Went Wrong.")
+
+
+Unchecked - RuntimeExceptions they do not have to be handled. IndexOutOfBoundExceptions.
+We do not have to put them in try catch.
+
+
