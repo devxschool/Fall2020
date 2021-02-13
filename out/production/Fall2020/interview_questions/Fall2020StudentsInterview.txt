@@ -1540,4 +1540,17 @@ or throws keyword in the method signature.
 Unchecked - RuntimeExceptions they do not have to be handled. IndexOutOfBoundExceptions.
 We do not have to put them in try catch.
 
+Gia -
+how to check if an app is running or not in linux? ps -ef | grep -i ipalm_qa_01
+how to read a big file? less or more command
+how to stop an app(process) - kill -9 PID.
+how to change permissions on a file or folder chmod ewdrd.
+
+
+
+
+
+
+
+
 

@@ -1,4 +1,4 @@
-package methods.junit;
+package methods.testclasses;
 
 import java.text.DecimalFormat;
 import java.util.List;
@@ -14,7 +14,7 @@ public class ClassesToTest {
         } else if (yearsOfService == 7) {
             return salary;
         } else {
-            return salary * 10 / 95;
+            return salary * 10 / 100;
         }
     }
 

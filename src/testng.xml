@@ -1,0 +1,35 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"><!-- this defines the format of this
+specific xml file -->
+
+<!-- testng xml is a file which holds configurations for our test suites -->
+<!-- test configs -->
+<!-- configuration - settings -->
+<!-- some code(app) should be able to run in different servers connecting to different databases -->
+<!-- in selenium you will have a config which tells your framework to run tests in Chrome or Firefox -->
+
+<!-- browser=chrome -->
+<!-- config file types :
+
+.xml -> eXtensible Markup Language
+.html -> hyper text markup language
+.properties
+.json
+.ini
+.yaml
+.csv -->
+
+<!-- {  } -->
+<!-- < - tags -->
+<!-- each tag must be closed -->
+<!-- name is an attribute of a suite tag -->
+
+<suite name="Suite 1">
+    <test name="test1">
+        <classes>
+            <!-- instead of creating runner classes like Junit we define test suites in xml file -->
+            <class name="tests.testng.CalculateBonusTest"></class>
+<!--            <class name="tests.testng.CalculateBonusTest2"></class>-->
+        </classes>
+    </test>
+</suite>
