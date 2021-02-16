@@ -1548,6 +1548,31 @@ how to change permissions on a file or folder chmod ewdrd.
 
 
 
+Timur -> How do you run your test suite?
+         Runner class. How many runner classes do you have?  two runner classes one for regression one for smoke test.
+
+         test suite? -> are bunch of tests which are combined together.
+         Smoke test suite.
+         regression test suite.
+         Test data(mock data)? -> is data that I use for performing tests. expected result for my tests. usually it comes from requirements.
+         or when it's straight forward I mock it up myself.
+         login, password ->  pre requisite test data.
+
+         how long does your smoke test run? 57 tests -> 8.5 mins
+         on smoke tests I am checking main functionality of my application.
+
+
+         How many test cases do you have in your regression? -> little more than 1200 1 hr 55 min.
+         joined my current company 2 years ago. 1 automation engineer.
+
+
+
+
+
+
+
+
+
 
 
 

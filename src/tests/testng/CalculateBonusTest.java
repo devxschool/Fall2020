@@ -61,6 +61,4 @@ public class CalculateBonusTest {
 
         Assert.assertEquals(AppStore.store, expectedStore, "Buy Ipad and AppleWatch Failure 2");
     }
-
-
 }

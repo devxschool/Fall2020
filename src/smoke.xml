@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Smoke">
+    <test name="Regression ON FireFox">
+
+        <parameter name="browser" value="firefox"/>
+        <parameter name="env" value="qa3"/>
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <exclude name="payment"/>
+                <exclude name ="statement"/>
+            </run>
+        </groups>
+
+        <classes>
+            <!-- instead of creating runner classes like Junit we define test suites in xml file -->
+            <class name="tests.testng.TestNGDemo1"/>
+            <class name="tests.testng.CalculateBonusTest"/>
+            <class name="tests.testng.TestNGGroups"></class>
+            <class name="tests.testng.WebAppTest"/>
+            <!--            <class name="tests.testng.CalculateBonusTest2"></class>-->
+        </classes>
+    </test>
+
+
+</suite>

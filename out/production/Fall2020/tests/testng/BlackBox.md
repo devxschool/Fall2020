@@ -31,17 +31,12 @@ So TestNG is a testing tool that can be used for both Unit tests and Acceptance 
 TestNG was inspired by Junit and it stands for Next Generation. It has been the most popular tool in the market for 
 some quite time.
 
-
 TestNG offer everyting Junit offers plus extra feature like DataProvider, Parameterization, Extra Annotations.
- 
- 
  
 Tests should never depend from each other. Which a certain should not fail just because previous test failed or previous
 test was not run. Result of each test must be the same when you run it in a group(regression, smoke) as well as
 when you run it indivudually.
 
 
-
-
-
-
+##TestNG - XML
+TestNG -XML file is used to execute tests. 
