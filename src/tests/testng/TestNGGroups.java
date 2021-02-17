@@ -16,17 +16,17 @@ public class TestNGGroups {
     //every test in your framework will have group.
     //cucumber -> tags.
 
-    @Test(groups = {ACCOUNT, "smoke", "regression"})
+    @Test(groups = {ACCOUNT, "smoke", "regression1"})
     public void test1() {
         System.out.println("Testing create account");
     }
 
-    @Test(groups = {ACCOUNT, "regression"})
+    @Test(groups = {ACCOUNT, "regression1"})
     public void test2() {
         System.out.println("Testing update account");
     }
 
-    @Test(groups = {ACCOUNT, "regression"})
+    @Test(groups = {ACCOUNT, "regression1"})
     public void test3() {
         System.out.println("Testing delete account");
     }

@@ -1,0 +1,69 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<!-- you can run parallel tests, methods. -->
+<!-- thread-count means how many parallels you want -->
+<suite name="Regression" parallel="tests" thread-count="4">
+    <test name="Regression1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="env" value="qa1"/>
+
+        <groups>
+            <run>
+                <include name="regression1"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="tests.testng.*"/>
+        </packages>
+    </test>
+
+
+    <test name="Regression2">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="env" value="qa2"/>
+
+        <groups>
+            <run>
+                <include name="regression2"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="tests.testng.*"/>
+        </packages>
+    </test>
+
+    <test name="Regression3">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="env" value="qa3"/>
+
+        <groups>
+            <run>
+                <include name="regression3"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="tests.testng.*"/>
+        </packages>
+    </test>
+
+
+    <test name="Regression4">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="env" value="qa4"/>
+
+        <groups>
+            <run>
+                <include name="regression4"/>
+            </run>
+        </groups>
+
+        <packages>
+            <package name="tests.testng.*"/>
+        </packages>
+    </test>
+</suite>

@@ -1567,6 +1567,35 @@ Timur -> How do you run your test suite?
 
 
 
+Assel -> Junit vs TestNG?
+Both are testing framework both can be used for unit tests. Junit is not the best option for black box testing.
+
+TestNG can be used for both unit and black box testing efficiently.
+
+Parameterization -> we can use parameteriazation only in xml file. we can put more than one param to a method.
+@Optional param annotation -> if the param is not provided it will be null.
+test is not going to run if there is no param and no @Optional.
+
+
+Data Provider -> is used to run same test against different set of test data. @DataProvider.
+
+Data Providers are used as test data for the tests, to be able to run the same test against multiple sets of data.
+
+Parameterization -> should not be as test data. Rather it should be used a param for the whole suite. This params are
+values that affect all tests (1000).
+
+enabled = false;
+
+in TestNG in order to run suites we use testng.xml file for test configs.
+
+in TestNG we can run tests based on different groups.
+
+you can assert exceptions.
+
+
+
+
+
 
 
 

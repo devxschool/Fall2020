@@ -89,5 +89,51 @@ specific xml file -->
             <!--            <class name="tests.testng.CalculateBonusTest2"></class>-->
         </classes>
     </test>
+
+
+    <test name="Regression2 ON FireFox">
+
+        <parameter name="browser" value="firefox"/>
+        <parameter name="env" value="qa4"/>
+        <groups>
+            <run>
+                <include name="regression4"/>
+                <exclude name="payment"/>
+                <exclude name ="statement"/>
+            </run>
+        </groups>
+
+        <classes>
+            <!-- instead of creating runner classes like Junit we define test suites in xml file -->
+            <class name="tests.testng.TestNGDemo1"/>
+            <class name="tests.testng.CalculateBonusTest"/>
+            <class name="tests.testng.TestNGGroups"></class>
+            <class name="tests.testng.WebAppTest"/>
+            <!--            <class name="tests.testng.CalculateBonusTest2"></class>-->
+        </classes>
+    </test>
+
+
+    <test name="Regression3 ON FireFox">
+
+        <parameter name="browser" value="firefox"/>
+        <parameter name="env" value="qa3"/>
+        <groups>
+            <run>
+                <include name="regression3"/>
+                <exclude name="payment"/>
+                <exclude name ="statement"/>
+            </run>
+        </groups>
+
+        <classes>
+            <!-- instead of creating runner classes like Junit we define test suites in xml file -->
+            <class name="tests.testng.TestNGDemo1"/>
+            <class name="tests.testng.CalculateBonusTest"/>
+            <class name="tests.testng.TestNGGroups"></class>
+            <class name="tests.testng.WebAppTest"/>
+            <!--            <class name="tests.testng.CalculateBonusTest2"></class>-->
+        </classes>
+    </test>
 </suite>
 

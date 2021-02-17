@@ -35,7 +35,7 @@ public class CalculateBonusTest {
     }
 
 
-    @Test
+    @Test(groups = "regression1")
     public void testBuyPossitive(){
         AppStore.buy("Ipad", 2);
         AppStore.buy("AppleWatch",1);
@@ -48,7 +48,8 @@ public class CalculateBonusTest {
         Assert.assertEquals(AppStore.store, expectedStore, "Buy Ipad and AppleWatch Failure");
     }
 
-    @Test //what do you do if one test from regression fails?
+    @Test(groups = "regression1")
+    //what do you do if one test from regression fails?
     public void testBuy2() {
         AppStore.buy("Ipad", 7);
         AppStore.buy("AppleWatch",1);

@@ -19,13 +19,13 @@ public class WebAppTest {
     }
 
 
-    @Test
+    @Test(groups = "regression4")
     public void test2(){
         System.out.println("Testing amazon.com search on Chrome");
     }
 
 
-    @Test
+    @Test(groups = "regression4")
     public void test3(){
         System.out.println("Testing amazon.com add to cart on Chrome");
     }

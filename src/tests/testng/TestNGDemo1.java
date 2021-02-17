@@ -14,7 +14,7 @@ public class TestNGDemo1 {
         System.out.println("Test 1");
     }
 
-    @Test
+    @Test(groups = "regression3")
     public void test2() {
         System.out.println("Test 2");
     }
@@ -25,7 +25,7 @@ public class TestNGDemo1 {
         System.out.println("Test 3");
     }
 
-    @Test(groups = {ACCOUNT})
+    @Test(groups = "regression3")
     public void test4(){
         System.out.println("Login Functionality");
     }

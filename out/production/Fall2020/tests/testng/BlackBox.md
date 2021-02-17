@@ -39,4 +39,18 @@ when you run it indivudually.
 
 
 ##TestNG - XML
-TestNG -XML file is used to execute tests. 
+TestNG -XML file is used to execute tests.  
+
+What is parallel testing?  When multiple tests run simultaneously. 
+What kind problem do you parallel test execution solving?
+
+number 1: Parallel tests help you achieve faster test executions. 
+What are biggest accomplishments - I decreased regression time from 4 hours to 1 hours 
+by utilizing parallel test executions. 
+
+Running 4 tests on 4 different servers in qa env - chase-qa01, chase-qa02, chase-qa03, chase-qa04.
+on each server we deploy(install) the same version of zelle(app under test). 
+In testNG I used groupping and grouped regression tests as regression1, regression2, regression3, regression4
+
+
+Test NG supports parallel test executions. 

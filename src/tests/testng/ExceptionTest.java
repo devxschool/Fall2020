@@ -13,14 +13,14 @@ public class ExceptionTest {
     }
 
 
-    @Test
+    @Test(groups = "regression2")
     public void positive(){
         int actual= parseStringIntoInteger("1234");
         Assert.assertEquals(actual,1234);
     }
 
 
-    @Test
+    @Test(groups = "regression2")
     public void negative(){
         try {
             parseStringIntoInteger("abc123");
